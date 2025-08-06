@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Hobbies</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 0 black;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .gallery-item {
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 15px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border: 2px solid white;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Daily Activities</h1>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="motorcycle.jpg" alt="Riding Motorcycle">
+      <div class="caption">Riding Motorcycle</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="fitness.jpg" alt="Fitness Work">
+      <div class="caption">Fitness Work</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="studying.jpg" alt="Studying">
+      <div class="caption">Studying</div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>
